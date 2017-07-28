@@ -23,7 +23,7 @@ class WPSEO_Premium {
 
 	const OPTION_CURRENT_VERSION = 'wpseo_current_version';
 
-	const PLUGIN_VERSION_NAME = '5.0.2';
+	const PLUGIN_VERSION_NAME = '5.1';
 	const PLUGIN_VERSION_CODE = '16';
 	const PLUGIN_AUTHOR = 'Yoast';
 	const EDD_STORE_URL = 'http://my.yoast.com';
@@ -170,6 +170,9 @@ class WPSEO_Premium {
 				$this,
 				'add_variable_array_key_pattern',
 			) );
+
+			// Hide the premium promo block for all users.
+			add_filter( 'get_user_option_yoast_promo_hide_premium_upsell_admin_block', '__return_true' );
 
 			// Settings.
 			add_action( 'admin_init', array( $this, 'register_settings' ) );
