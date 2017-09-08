@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0bae0a9d8dd637153237239ee533df14
+class ComposerStaticInit746b96afea12dfeb8c6e2f60b2f10681
 {
     public static $files = array (
         '995b589e693a50f54393aa31ee1c3763' => __DIR__ . '/..' . '/yoast/whip/src/facades/wordpress.php',
@@ -376,8 +376,8 @@ class ComposerStaticInit0bae0a9d8dd637153237239ee533df14
         'Yoast_HelpScout_Beacon' => __DIR__ . '/..' . '/yoast/wp-helpscout/src/class-helpscout-beacon.php',
         'Yoast_HelpScout_Beacon_Identifier' => __DIR__ . '/..' . '/yoast/wp-helpscout/src/class-helpscout-beacon-identifier.php',
         'Yoast_HelpScout_Beacon_Setting' => __DIR__ . '/..' . '/yoast/wp-helpscout/src/interface-helpscout-beacon-setting.php',
-        'Yoast_I18n_WordPressOrg_v2' => __DIR__ . '/..' . '/yoast/i18n-module/src/i18n-module-wordpressorg.php',
-        'Yoast_I18n_v2' => __DIR__ . '/..' . '/yoast/i18n-module/src/i18n-module.php',
+        'Yoast_I18n_WordPressOrg_v3' => __DIR__ . '/..' . '/yoast/i18n-module/src/i18n-module-wordpressorg.php',
+        'Yoast_I18n_v3' => __DIR__ . '/..' . '/yoast/i18n-module/src/i18n-module.php',
         'Yoast_Input_Select' => __DIR__ . '/../..' . '/admin/views/class-yoast-input-select.php',
         'Yoast_License_Manager' => __DIR__ . '/..' . '/yoast/license-manager/class-license-manager.php',
         'Yoast_Notification' => __DIR__ . '/../..' . '/admin/class-yoast-notification.php',
@@ -402,10 +402,10 @@ class ComposerStaticInit0bae0a9d8dd637153237239ee533df14
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0bae0a9d8dd637153237239ee533df14::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0bae0a9d8dd637153237239ee533df14::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit0bae0a9d8dd637153237239ee533df14::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit0bae0a9d8dd637153237239ee533df14::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit746b96afea12dfeb8c6e2f60b2f10681::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit746b96afea12dfeb8c6e2f60b2f10681::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit746b96afea12dfeb8c6e2f60b2f10681::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit746b96afea12dfeb8c6e2f60b2f10681::$classMap;
 
         }, null, ClassLoader::class);
     }
